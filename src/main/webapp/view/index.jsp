@@ -12,7 +12,7 @@
 <body>
 
 <div class="container mt-3">
-  <a type="button" class="btn btn-info" href="/create.jsp">Create</a>
+  <a type="button" class="btn btn-info" href="/view/create.jsp">Create</a>
   <table class="table">
     <thead>
     <tr>
@@ -29,9 +29,9 @@
     <tr class="table-warning">
       <td>${pr.getId()}</td>
       <td>${pr.name}</td>
-      <td><img src="${pr.img}"></td>
+      <td><img src="${pr.img}" width="200px" height="200px"></td>
       <td>${pr.price}</td>
-      <td><a type="button" class="btn btn-warning" href="edit.jsp">Edit</a></td>
+      <td><a type="button" class="btn btn-warning" href="/edit?id=${pr.id}">Edit</a></td>
       <td><a type="button" class="btn btn-danger" href="/delete?id=${pr.id}">Delete</a></td>
     </tr>
     </c:forEach>

@@ -29,11 +29,11 @@ public class ProductService {
         }
         return null;
     }
-    public static void edit(int id,Product product){
-        for (int i = 0; i < products.size(); i++) {
-            if(products.get(i).getId()== id){
-                products.set(i,product);
-            }
-        }
-    }
+//    public static void edit(int id,Product product){
+//        for (int i = 0; i < products.size(); i++) {
+//            if(products.get(i).getId()== id){
+//                products.set(i,product);
+//            }
+//        }
+//    }
 }
